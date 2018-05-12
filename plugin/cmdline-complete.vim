@@ -31,10 +31,10 @@ set cpo&vim
 " Default bindings
 
 if !hasmapto('<Plug>CmdlineCompleteBackward', 'c')
-	cmap <unique> <silent> <c-p> <Plug>CmdlineCompleteBackward
+	cmap <unique> <silent> <c-y> <Plug>CmdlineCompleteBackward
 endif
 if !hasmapto('<Plug>CmdlineCompleteForward', 'c')
-	cmap <unique> <silent> <c-n> <Plug>CmdlineCompleteForward
+	cmap <unique> <silent> <c-x> <Plug>CmdlineCompleteForward
 endif
 
 cnoremap <silent> <Plug>CmdlineCompleteBackward <c-r>=<sid>CmdlineComplete(1)<cr>
